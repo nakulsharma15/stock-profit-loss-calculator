@@ -42,7 +42,7 @@ function calculateProfitAndLoss(initial, quantity, current) {
       `Hey, the profit is: ₹${profit} and the profit percentage is: ${profitPercentage.toFixed(2)}%`
     );
   } else {
-    showOutput(`No pain no gain and no gain no pain`);
+    showOutput(`No Pain No Gain And No Gain No Pain!`);
   }
 }
 
