@@ -13,17 +13,20 @@ function submitHandler() {
   var qty = Number(stocksQuantity.value);
   var curr = Number(currentPrice.value);
 
-  if(ip && qty && curr) {
-    calculateProfitAndLoss(ip, qty, curr);
-  }
-
-  else if(ip <= 0 || qty <= 0 || curr <= 0) {
+if(ip < 1 || qty < 1 || curr < 1) {
     showOutput("Note: Please Enter All The Fields and Values in them must be greater than 0!");
 }
 
 
-  
+  else if(ip && qty && curr) {
+    calculateProfitAndLoss(ip, qty, curr);
+  }
+
+else {
+  showOutput("Note: Please Enter All The Fields and Values in them must be greater than 0!");
 }
+}
+
 
 // Ex-05
 function calculateProfitAndLoss(initial, quantity, current) {
