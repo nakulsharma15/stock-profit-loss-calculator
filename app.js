@@ -32,14 +32,14 @@ function calculateProfitAndLoss(initial, quantity, current) {
     var lossPercentage = (loss / initial) * 100;
 
     showOutput(
-      `Hey, the loss is ${loss} and the percent is ${lossPercentage.toFixed(2)}%`
+      `Hey, the loss is: ₹ ${loss} and the loss percentage is: ${lossPercentage.toFixed(2)}%`
     );
   } else if (current > initial) {
     var profit = (current - initial) * quantity;
     var profitPercentage = (profit / initial) * 100;
 
     showOutput(
-      `Hey, the profit is ${profit} and the percent is ${profitPercentage.toFixed(2)}%`
+      `Hey, the profit is: ₹${profit} and the profit percentage is: ${profitPercentage.toFixed(2)}%`
     );
   } else {
     showOutput(`No pain no gain and no gain no pain`);
